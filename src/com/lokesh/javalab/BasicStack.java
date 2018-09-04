@@ -1,27 +1,27 @@
 package com.lokesh.javalab;
 
-public class BasicStack<x> {
+public class BasicStack<X> {
 
-    private x[] data;
+    private X[] data;
     private int stackPointer;
 
     public BasicStack(){
-        data = (x[]) new Object[1000];
+        data = (X[]) new Object[1000];
         stackPointer = 0;
     }
 
-    public void push(x newItem){
+    public void push(X newItem){
         data[stackPointer++] = newItem;
     }
 
-    public x pop(){
+    public X pop(){
         if(stackPointer == 0){
             throw new IllegalStateException("No items in stack");
         }
         return data[--stackPointer];
     }
 
-    public boolean contains(x item){
+    public boolean contains(X item){
         boolean found = false;
 
         for(int i=0; i <stackPointer; i++){
@@ -33,9 +33,9 @@ public class BasicStack<x> {
         return found;
     }
 
-    public x access(x item){
+    public X access(X item){
         while(stackPointer>0){
-            x tmpItem = pop();
+            X tmpItem = pop();
             if(item.equals(tmpItem)){
                 return tmpItem;
             }
