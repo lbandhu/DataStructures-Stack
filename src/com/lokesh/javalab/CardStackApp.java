@@ -1,7 +1,8 @@
 package com.lokesh.javalab;
 
 public class CardStackApp {
-    BasicStack<String> stack = new BasicStack<String>();
+
+    private BasicStack<String> stack = new BasicStack<String>();
 
     public static void main(String[] args) {
         CardStackApp app = new CardStackApp();
@@ -28,7 +29,7 @@ public class CardStackApp {
     }
 
     public void stackCards() {
-        //stack the spade suit
+        System.out.println("stack the spade suit");
         stack.push("Ace of Spades");
         stack.push("2 of Spades");
         stack.push("3 of Spades");
@@ -43,7 +44,7 @@ public class CardStackApp {
         stack.push("Queen of Spades");
         stack.push("King of Spades");
 
-        //stack the diamond suit
+        System.out.println("stack the diamond suit");
         stack.push("Ace of Diamonds");
         stack.push("2 of Diamonds");
         stack.push("3 of Diamonds");
@@ -58,7 +59,7 @@ public class CardStackApp {
         stack.push("Queen of Diamonds");
         stack.push("King of Diamonds");
 
-        //stack the club suit
+        System.out.println("stack the club suit");
         stack.push("Ace of Clubs");
         stack.push("2 of Clubs");
         stack.push("3 of Clubs");
@@ -73,7 +74,7 @@ public class CardStackApp {
         stack.push("Queen of Clubs");
         stack.push("King of Clubs");
 
-        //stack the heart suit
+        System.out.println("stack the heart suit");
         stack.push("Ace of Hearts");
         stack.push("2 of Hearts");
         stack.push("3 of Hearts");
